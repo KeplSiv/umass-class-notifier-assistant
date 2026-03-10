@@ -1,0 +1,23 @@
+# OS / editor
+.DS_Store
+.claude/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets — never commit these
+config.json
+bot_config.json
+session.json
+sessions/
+configs/
+
+# Runtime / debug output
+logs/
+debug_lookup/
+debug_*.html
+*.log
+autologin_debug.png

@@ -1,0 +1,18 @@
+{
+  "name": "Your Name",
+  "discord_webhook_url": "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN",
+  "discord_bot_token": "YOUR_BOT_TOKEN",
+  "discord_channel_id": "YOUR_CHANNEL_ID",
+  "discord_user_id": "YOUR_DISCORD_USER_ID",
+  "spire_username": "netid@umass.edu",
+  "spire_password": "YOUR_SPIRE_PASSWORD",
+  "check_interval": 300,
+  "term": "1267",
+  "institution": "UMAMH",
+  "classes": [
+    {
+      "class_nbr": "CLASS_NUMBER",
+      "crse_id": "COURSE_ID"
+    }
+  ]
+}

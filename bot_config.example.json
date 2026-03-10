@@ -1,0 +1,8 @@
+{
+  "bot_token": "YOUR_BOT_TOKEN",
+  "guild_id": "YOUR_DISCORD_SERVER_ID",
+  "signup_channel_id": "YOUR_SIGNUP_CHANNEL_ID",
+  "category_id": "YOUR_PRIVATE_CHANNEL_CATEGORY_ID",
+  "term": "1267",
+  "institution": "UMAMH"
+}
