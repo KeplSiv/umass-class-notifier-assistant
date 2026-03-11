@@ -27,8 +27,8 @@ Built for students tired of refreshing SPIRE every few minutes. Run it on your l
 ## Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ClassNotifierThing.git
-cd ClassNotifierThing
+git clone https://github.com/KeplSiv/umass-class-notifier-assistant.git
+cd umass-class-notifier-assistant
 
 python3 -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
