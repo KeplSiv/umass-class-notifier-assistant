@@ -10,9 +10,6 @@
   "term": "1267",
   "institution": "UMAMH",
   "classes": [
-    {
-      "class_nbr": "CLASS_NUMBER",
-      "crse_id": "COURSE_ID"
-    }
+    { "class_nbr": "CLASS_NUMBER" }
   ]
 }

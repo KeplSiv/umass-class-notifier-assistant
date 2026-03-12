@@ -10,7 +10,7 @@ Built for students tired of refreshing SPIRE every few minutes. Run it on your l
 
 ## Features
 
-- Watch multiple classes by `class_nbr` and `crse_id`
+- Watch multiple classes by **class number only** — SPIRE lookup fills in the rest
 - Notify only on real changes (seat open, waitlist open, session expired) — not every poll
 - **Single-user mode**: one `config.json` + optional webhook
 - **Multi-user bot mode**: `/signup`, private channels, per-user watcher processes, OTP login via Discord
@@ -65,13 +65,12 @@ cp bot_config.example.json bot_config.json
   "term": "1267",
   "institution": "UMAMH",
   "classes": [
-    {
-      "class_nbr": "11706",
-      "crse_id": "042327"
-    }
+    { "class_nbr": "11706" }
   ]
 }
 ```
+
+You only need **`class_nbr`** (the class number). The watcher looks up the course in SPIRE automatically — you do not enter `crse_id`.
 
 Optional fields for Discord-assisted login when the session expires:
 
@@ -79,13 +78,9 @@ Optional fields for Discord-assisted login when the session expires:
 - `discord_channel_id`
 - `spire_username` / `spire_password`
 
-### 2. Find class IDs
+### 2. Find your class number
 
-Open the class in SPIRE and copy from the URL:
-
-```text
-...CRSE_ID=042327...CLASS_NBR=11706...
-```
+In SPIRE, open the class and use the **Class Nbr** (e.g. `11706`). That is all you need for `/add 11706` in bot mode or `"class_nbr": "11706"` in `config.json`.
 
 ### 3. Log in
 
@@ -148,7 +143,7 @@ Restarts watchers for all users in `configs/` who have classes configured.
 2. User replies with UMass email → bot creates a **private channel**.
 3. User sends SPIRE password in the private channel.
 4. Bot logs in; user sends `!otp 123456` if prompted.
-5. User runs `/add CLASS_NBR` for each class, then `/done`.
+5. User runs `/add 11706` (class number only) for each class, then `/done`.
 6. A background watcher process starts for that user.
 
 ### Commands (private channel)
